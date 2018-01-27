@@ -1,7 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+let clock = function(){
+  return <h1>{new Date().toLocaleTimeString()}</h1>
+}
+
 ReactDOM.render(
-  <h1>Ya Rasool Allah..</h1>,
+  clock(),
   document.getElementById('root')
 );
